@@ -1,4 +1,3 @@
-# Import libraries
 import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
@@ -7,10 +6,6 @@ import itertools
 import random
 import operator
 import math
-import pickle
-import os
-from tqdm import tqdm
-import sys
 
 # Targeted attack model in which the degree is calculated only once
 def degreerobustness(contingencysize, graph):   
