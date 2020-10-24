@@ -8,6 +8,10 @@ import operator
 import math
 
 # Targeted attack model in which the degree is calculated only once
+
+
+# contingencysize is the number of nodes to be removed in one step
+# graph is the original network
 def degreerobustness(contingencysize, graph):   
     original_graph = graph.copy()
     largestcluster = max(nx.connected_component_subgraphs(original_graph), key=len)
