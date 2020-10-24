@@ -11,7 +11,9 @@ import os
 from tqdm import tqdm
 import sys
 
-
+# Random failures
+# contingencysize is the number of nodes to be removed in one step
+# graph is the original network
 def robustness(contingencysize, graph):
     original_graph = graph.copy()
     largestcluster = max(nx.connected_component_subgraphs(original_graph), key=len)
